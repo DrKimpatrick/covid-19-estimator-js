@@ -9,6 +9,13 @@ const Power = (base, exponent) => {
   return base * Power(base, exponent - 1);
 };
 
+// var logString = '';
+
+// // Logs
+// const log = (data) => {
+//   logString += data;
+// };
+
 
 const covid19ImpactEstimator = (data) => {
   /**
@@ -86,4 +93,4 @@ const covid19ImpactEstimator = (data) => {
   return outPut;
 };
 
-export default covid19ImpactEstimator;
+module.exports = covid19ImpactEstimator;

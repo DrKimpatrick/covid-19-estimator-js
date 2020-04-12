@@ -5,9 +5,17 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "lint": "eslint ./src/"
+    "lint": "eslint ./src/",
+    "start": "node src/app.js",
+    "start:heroku": "node src/app.js",
+    "heroku-post-build": "npm install"
   },
   "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "json2xml": "^0.1.3",
     "on-covid-19": "^0.1.3"
   },
   "devDependencies": {
